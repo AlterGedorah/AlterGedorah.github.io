@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riel</title>
     <link rel="icon" href="images/Logo.png" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,12 +14,25 @@
     />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid bg">
       <div class="row">
-        <div class="col">
-          <div class="justify-content-center align-items-center text-center min-vh-100 d-flex flex-column">
-            <h1 class="text-center">Under Construction</h1>
-            <img src="images/qr.png" alt="qr">
+        <nav
+          class="col-1 rounded-end-4 min-vh-100 position-sticky"
+          style="background-color: #313244"
+        ></nav>
+        <div class="col d-flex flex-row mt-2 gap-2">
+          <div class="col-2 min-vh-20">
+            <div class="card p-2 panels">
+              <img src="images/Logo.png" alt="Logo">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-2 panels min-vh-20">
+              <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
