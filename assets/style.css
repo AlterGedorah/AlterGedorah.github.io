@@ -1,6 +1,35 @@
-body,.bg {
-    background-color: #11111B;
+@font-face {
+    font-family: 'FOT-Rodin'; 
+    src: url('assets/FOT-Rodin Pro DB.otf') format('opentype'); 
 }
-.panels{
+@font-face {
+    font-family: 'FOT-Skip'; 
+    src: url('assets/FOT-Skip Std B.otf') format('opentype'); 
+}
+
+:root {
+    --font-main: 'FOT-Skip', sans;
+    --font-heading: 'FOT-Rodin', sans;
+    --font-color: #CDD6F4;
+}
+/*.img-fluid {
+  max-width: 100% !important;
+  height: auto !important;
+}*/
+.title-header {
+    font-family: var(--font-heading);
+    font-size: 4rem !important;
+    color: var(--font-color);
+}
+.title-subheader {
+    font-family: var(--font-main);
+    font-size: 2rem !important;
+    color: var(--font-color);
+}
+body,
+.bg {
+    background-color: #11111b;
+}
+.panels {
     background-color: #313244 !important;
 }
