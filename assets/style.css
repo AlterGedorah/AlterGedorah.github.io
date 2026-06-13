@@ -8,7 +8,7 @@
 }
 
 :root {
-    --font-main: 'FOT-Skip', sans;
+    --font-main: 'FOT-Skip', sans-serif;
     --font-heading: 'FOT-Rodin', sans;
     --font-color: #CDD6F4;
 }
@@ -21,9 +21,14 @@
     font-size: 4rem !important;
     color: var(--font-color);
 }
-.title-subheader {
+.title-subheader,h4 {
     font-family: var(--font-main);
     font-size: 2rem !important;
+    color: var(--font-color) !important;
+}
+p {
+    font-family: var(--font-main);
+    font-size: 1.5rem !important;
     color: var(--font-color);
 }
 body,
@@ -32,4 +37,43 @@ body,
 }
 .panels {
     background-color: #313244 !important;
+}
+/* Hide overflow and setup window */
+.scrolling-tools-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent); /* Cool fade edge effect */
+}
+
+/* Flex track that moves infinitely */
+.scrolling-tools-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll-left 15s linear infinite;
+}
+
+/* Image/SVG sizing inside marquee */
+.scrolling-tools-track img, 
+.scrolling-tools-track svg {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* Pause animation on hover for user experience */
+.scrolling-tools-container:hover .scrolling-tools-track {
+  animation-play-state: paused;
+}
+
+/* The infinite translation loop formula */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Moves exactly halfway (width of one full set of items) */
+    transform: translateX(-50%); 
+  }
 }

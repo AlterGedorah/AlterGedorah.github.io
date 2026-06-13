@@ -1,93 +1,439 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Riel</title>
-        <link rel="icon" href="images/Logo.png" />
-        <link rel="stylesheet" href="assets/style.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-    </head>
-    <body>
-        <div class="container-fluid bg">
-            <div class="row">
-                <nav
-                    class="col-md-1 rounded-end-4 min-vh-100 position-fixed top-0 panels"
-                ></nav>
-                <div class="col-md-1 rounded-end-4 min-vh-100 top-0"></div>
-                <div class="col-md-11 p-3">
-                    <div class="row g-3 mb-3 d-flex align-items-stretch">
-                        <div class="col-md-2 d-flex align-items-center">
-                            <div
-                                class="card p-2 panels h-60 d-flex align-items-center justify-content-center"
-                            >
-                                <img
-                                    src="images/Logo.png"
-                                    alt="Logo"
-                                    class="img-fluid"
-                                />
-                            </div>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="rounded-4 p-4 panels h-100 d-flex flex-column justify-content-center">
-                                <h1 class="title-header text-start">Hi!Im Riel</h1>
-                                <h2 class="title-subheader text-start">Aspiring Security Analyst</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row g-3 mb-3 d-flex align-items-stretch">
-                        <div class="col-md-7">
-                            <div
-                                class="card p-4 panels h-100"
-                                style="min-height: 250px"
-                            >
-                                <h3>Featured Project</h3>
-                                <p>
-                                    Big content match height with right cards.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 d-flex flex-column gap-3">
-                            <div class="card p-3 panels flex-grow-1">
-                                <h5>GitHub Stats</h5>
-                            </div>
-                            <div class="card p-3 panels flex-grow-1">
-                                <h5>Tech Stack</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row g-3 d-flex align-items-stretch">
-                        <div class="col-md-4">
-                            <div
-                                class="card p-4 panels h-100"
-                                style="min-height: 180px"
-                            >
-                                <h4>About Me</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card p-4 panels h-100">
-                                <h4>Socials</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card p-4 panels h-100">
-                                <h4>Contact</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riel</title>
+    <link rel="icon" href="images/Logo.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid bg">
+      <div class="row">
+        <nav
+          class="col-md-1 rounded-end-4 min-vh-100 position-fixed top-0 panels"
+        ></nav>
+        <div class="col-md-1 rounded-end-4 min-vh-100 top-0"></div>
+        <div class="col-md-11 p-3">
+          <div class="row g-3 mb-3 d-flex align-items-stretch">
+            <div class="col-md-2 d-flex align-items-center">
+              <div
+                class="card p-2 panels h-60 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/Logo.png" alt="Logo" class="img-fluid" />
+              </div>
             </div>
-        </div>
+            <div class="col-md-10">
+              <div
+                class="rounded-4 p-4 panels h-100 d-flex flex-column justify-content-center"
+              >
+                <h1 class="title-header text-start">Hi!Im Riel</h1>
+                <h2 class="title-subheader text-start">
+                  Aspiring Security Analyst
+                </h2>
+              </div>
+            </div>
+          </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+          <div class="row g-3 mb-3 d-flex align-items-stretch">
+            <div class="col-md-8">
+              <div class="card rounded-4 p-4 panels h-100">
+                <p>
+                  I am aspiring to be a Security Analyst. I have a keen interest
+                  in observing, troubleshooting, network security, data
+                  security, cryptography, design, server administration and
+                  operating systems.
+                </p>
+              </div>
+            </div>
+            <!-- Done -->
+            <div class="col-md-4 d-flex flex-column gap-3">
+              <div
+                class="d-grid gap-3 h-100"
+                style="
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-template-rows: repeat(2, 1fr);
+                "
+              >
+                <a
+                  href="https://www.linkedin.com/in/gabriel-percal-3742a0416/"
+                  class="card panels rounded-4 d-flex align-items-center justify-content-center text-decoration-none p"
+                  style="aspect-ratio: 1 / 1"
+                  alt="linkedin"
+                >
+                  <svg
+                    width="60%"
+                    height="60%"
+                    viewBox="0 0 58 58"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_10_100)">
+                      <path
+                        d="M41.4139 55.8188H16.2054C8.28272 55.8188 1.80054 49.3366 1.80054 41.4139V16.2055C1.80054 8.28279 8.28272 1.80061 16.2054 1.80061H41.4139C49.3365 1.80061 55.8187 8.28279 55.8187 16.2055V41.4139C55.8187 49.3366 49.3365 55.8188 41.4139 55.8188Z"
+                        stroke="#CDD6F4"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M19.8067 23.4079H12.6042V45.0152H19.8067V23.4079Z"
+                        stroke="#CDD6F4"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M36.9124 23.4079C35.2919 23.4079 33.6713 23.9481 32.4109 24.8484V23.4079H25.2085V45.0152H28.8097H32.4109V33.3112C32.4109 31.8707 33.6713 30.6103 35.1118 30.6103C36.5523 30.6103 37.8127 31.8707 37.8127 33.3112V45.0152H45.0152V31.5106C45.0152 27.0091 41.414 23.4079 36.9124 23.4079Z"
+                        stroke="#CDD6F4"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.2055 18.0061C18.1944 18.0061 19.8067 16.3937 19.8067 14.4048C19.8067 12.416 18.1944 10.8036 16.2055 10.8036C14.2166 10.8036 12.6042 12.416 12.6042 14.4048C12.6042 16.3937 14.2166 18.0061 16.2055 18.0061Z"
+                        stroke="#CDD6F4"
+                        stroke-width="4"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_10_100">
+                        <rect width="57.6194" height="57.6194" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/AlterGedorah"
+                  class="card panels rounded-4 d-flex align-items-center justify-content-center text-decoration-none p"
+                  style="aspect-ratio: 1 / 1"
+                  alt="Github Link"
+                >
+                  <svg
+                    width="60%"
+                    height="60%"
+                    viewBox="0 0 58 58"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.7813 7.1872C9.92109 4.71427 10.5118 3.6389 12.2058 2.77535C14.0285 1.84589 16.9033 2.27844 20.2861 3.99142C21.7431 4.72959 21.8915 4.74462 24.445 4.41723C27.8391 3.98192 32.2086 3.98345 35.3413 4.42122C37.7103 4.75227 37.8658 4.73573 39.3264 3.99603C44.128 1.56448 47.919 1.72358 49.2917 4.41416C49.9769 5.75716 50.1041 9.24198 49.5728 12.1162C49.2783 13.7096 49.3095 13.9086 50.0191 14.9542C55.0118 22.3117 51.4144 34.2378 42.859 38.6884C42.2044 39.0291 41.6527 39.2399 41.203 39.4115C39.8224 39.9387 39.4032 40.0988 39.9107 42.5254C40.1551 43.6927 40.4495 46.5946 40.5652 48.9747C40.7743 53.2767 40.7712 53.3067 40.0166 54.1844C38.9896 55.3783 37.5093 55.3985 36.5063 54.2322C35.8521 53.4717 35.7883 53.1125 35.7883 50.1781C35.7883 45.8418 35.3129 42.9595 34.1899 40.4897C32.8544 37.5505 33.8444 36.4546 36.8986 35.7977C41.1437 34.8845 44.4593 32.2646 46.3074 28.3633C48.0645 24.6547 48.3293 19.5297 45.1527 16.4128C44.2493 15.3392 44.1864 14.3669 44.8315 11.4347C45.0725 10.3388 45.2746 8.92502 45.2806 8.29261C45.2897 7.29387 45.1988 7.14306 44.5854 7.14306C44.1972 7.14306 42.714 7.70772 41.2899 8.39776L39.017 9.49943C38.8103 9.59957 38.5791 9.63807 38.351 9.61191C32.5713 8.9485 27.0795 8.93825 21.2716 9.6145C21.0426 9.64115 20.8104 9.60264 20.603 9.502L18.3313 8.3996C16.907 7.70832 15.4239 7.14306 15.0359 7.14306C14.1386 7.14306 14.1251 7.8055 14.943 11.7413C15.4426 14.145 15.7788 14.6806 14.3345 16.6025C12.1696 19.4835 11.6289 23.0609 12.7898 26.8196C14.2529 31.5562 17.8359 34.7561 22.8731 35.8237C25.9097 36.4673 26.7033 37.3071 25.5438 40.789C24.631 43.5292 24.0539 44.2355 22.7275 44.2355C20.9427 44.2355 19.8248 42.6894 20.44 41.0716C20.711 40.3586 20.6304 40.2825 18.9585 39.6727C13.8547 37.8119 9.95112 33.6412 8.1664 28.1417C6.78693 23.8913 7.3939 18.3591 9.60689 15.0152C10.3604 13.8767 10.372 13.7801 10.0204 11.6006C9.82146 10.3667 9.71386 8.3809 9.7813 7.1872Z"
+                      fill="#CDD6F4"
+                    />
+                    <path
+                      d="M7.99927 38.2801C7.26382 37.1769 5.7733 36.8788 4.67011 37.6143C3.56694 38.3497 3.26882 39.8403 4.00427 40.9434C4.54724 41.7579 5.19679 42.427 5.7484 42.9785C5.8501 43.0802 5.94891 43.1784 6.04539 43.2742C6.50746 43.7332 6.91543 44.1385 7.32518 44.6196C8.23147 45.6833 9.13559 47.1161 9.64944 49.6853C9.87832 50.8297 10.7009 51.4462 11.1567 51.7156C11.651 52.0075 12.1911 52.1796 12.6355 52.2917C13.5447 52.521 14.6484 52.6401 15.6958 52.7094C16.8456 52.7858 18.0915 52.8105 19.2056 52.8172C19.2064 54.1422 20.2809 55.2162 21.6063 55.2162C22.9322 55.2162 24.007 54.1414 24.007 52.8155V50.4149C24.007 49.0889 22.9322 48.0142 21.6063 48.0142C21.38 48.0142 21.1351 48.0149 20.8758 48.0158C19.4669 48.0202 17.6305 48.0257 16.0132 47.9186C15.2332 47.867 14.5921 47.7938 14.122 47.7042C13.398 44.862 12.2283 42.971 10.9802 41.5059C10.4285 40.8584 9.85717 40.2918 9.39247 39.8309C9.30547 39.7447 9.22221 39.6621 9.14349 39.5834C8.6073 39.0473 8.25655 38.6661 7.99927 38.2801Z"
+                      fill="#CDD6F4"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/gabriel.percal.325/"
+                  class="card panels rounded-4 d-flex align-items-center justify-content-center text-decoration-none p"
+                  style="aspect-ratio: 1 / 1"
+                  alt="Facebook"
+                >
+                  <svg
+                    width="60%"
+                    height="60%"
+                    viewBox="0 0 58 58"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_33_8)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 11.524C0 5.15947 5.15947 0 11.524 0H46.096C52.4604 0 57.62 5.15947 57.62 11.524V46.096C57.62 52.4604 52.4604 57.62 46.096 57.62H11.524C5.15947 57.62 0 52.4604 0 46.096V11.524ZM11.524 5.762C8.34173 5.762 5.762 8.34173 5.762 11.524V46.096C5.762 49.2784 8.34173 51.858 11.524 51.858H28.81V31.691H25.929C24.3378 31.691 23.048 30.4012 23.048 28.81C23.048 27.2188 24.3378 25.929 25.929 25.929H28.81V21.6075C28.81 16.0385 33.3245 11.524 38.8935 11.524H40.6221C42.2133 11.524 43.5031 12.8139 43.5031 14.405C43.5031 15.9961 42.2133 17.286 40.6221 17.286H38.8935C36.5069 17.286 34.572 19.2208 34.572 21.6075V25.929H40.6221C42.2133 25.929 43.5031 27.2188 43.5031 28.81C43.5031 30.4012 42.2133 31.691 40.6221 31.691H34.572V51.858H46.096C49.2784 51.858 51.858 49.2784 51.858 46.096V11.524C51.858 8.34173 49.2784 5.762 46.096 5.762H11.524Z"
+                        fill="#CDD6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_33_8">
+                        <rect width="57.62" height="57.62" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="card panels rounded-4 d-flex align-items-center justify-content-center text-decoration-none p"
+                  style="aspect-ratio: 1 / 1"
+                  alt="music"
+                >
+                  <svg
+                    width="60%"
+                    height="60%"
+                    viewBox="0 0 58 58"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.8099 36.0125C32.7878 36.0125 36.0124 32.7878 36.0124 28.81C36.0124 24.8322 32.7878 21.6075 28.8099 21.6075C24.8321 21.6075 21.6074 24.8322 21.6074 28.81C21.6074 32.7878 24.8321 36.0125 28.8099 36.0125Z"
+                      stroke="#CDD6F4"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M11.8336 45.7865C21.2095 55.1623 36.4106 55.1623 45.7866 45.7865C55.1624 36.4106 55.1624 21.2094 45.7866 11.8335C36.4106 2.45771 21.2095 2.45771 11.8336 11.8335C2.4578 21.2094 2.4578 36.4106 11.8336 45.7865Z"
+                      stroke="#CDD6F4"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M17.7753 39.8459C11.681 33.7516 11.681 23.8708 17.7753 17.7765M39.8447 17.7765C45.939 23.8708 45.939 33.7516 39.8447 39.8459"
+                      stroke="#CDD6F4"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="card panels rounded-4 d-flex align-items-center justify-content-center text-decoration-none p"
+                  style="aspect-ratio: 1 / 1"
+                  id="resume"
+                >
+                  <svg
+                    width="60%"
+                    height="60%"
+                    viewBox="0 0 58 58"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M26.2773 3.00104H31.3426C34.626 3.00099 37.2724 3.00094 39.3539 3.28078C41.5149 3.57133 43.3343 4.19288 44.7796 5.63799C45.496 6.35457 46.01 7.1632 46.3816 8.05988C48.6194 8.3402 50.4981 8.95592 51.9821 10.4398C53.4271 11.8849 54.0487 13.7044 54.3392 15.8654C54.6189 17.9469 54.6189 20.5934 54.6189 23.8767V33.7435C54.6189 37.0268 54.6189 39.6733 54.3392 41.7548C54.0487 43.9158 53.4271 45.7354 51.9821 47.1804C50.4981 48.6644 48.6194 49.28 46.3816 49.5604C46.01 50.4569 45.496 51.2655 44.7796 51.9821C43.3343 53.4272 41.5149 54.0488 39.3539 54.3393C37.2724 54.6189 34.626 54.6189 31.3426 54.6189H26.2773C22.994 54.6189 20.3475 54.6189 18.2661 54.3393C16.1051 54.0488 14.2855 53.4272 12.8404 51.9821C12.1239 51.2655 11.6099 50.4569 11.2383 49.5604C9.00051 49.28 7.12184 48.6644 5.63793 47.1804C4.19282 45.7354 3.57127 43.9158 3.28072 41.7548C3.00088 39.6733 3.00093 37.0268 3.00098 33.7435V23.8767C3.00093 20.5934 3.00088 17.9469 3.28072 15.8654C3.57127 13.7044 4.19282 11.8849 5.63793 10.4398C7.12182 8.95592 9.00047 8.3402 11.2381 8.05988C11.6098 7.1632 12.1239 6.35457 12.8404 5.63799C14.2855 4.19288 16.1051 3.57133 18.2661 3.28078C20.3475 3.00094 22.994 3.00099 26.2773 3.00104ZM10.3918 11.8612C9.34115 12.1144 8.68615 12.4845 8.1844 12.9862C7.51995 13.6507 7.08672 14.5836 6.84987 16.3453C6.60604 18.1587 6.60223 20.5623 6.60223 24.0086V33.6119C6.60223 37.0581 6.60604 39.4615 6.84987 41.2749C7.08672 43.0366 7.51995 43.9696 8.1844 44.6339C8.68617 45.1357 9.34117 45.5059 10.3918 45.7589C10.2034 43.8114 10.2034 41.4228 10.2035 38.5451V19.0749C10.2034 16.1973 10.2034 13.8088 10.3918 11.8612ZM47.2282 45.7589C48.2788 45.5059 48.9337 45.1357 49.4355 44.6339C50.1 43.9696 50.5331 43.0366 50.7701 41.2749C51.0138 39.4615 51.0176 37.0581 51.0176 33.6119V24.0086C51.0176 20.5623 51.0138 18.1587 50.7701 16.3453C50.5331 14.5836 50.1 13.6507 49.4355 12.9862C48.9337 12.4845 48.2788 12.1144 47.2282 11.8612C47.4164 13.8088 47.4164 16.1973 47.4164 19.0749V38.5451C47.4164 41.4228 47.4164 43.8114 47.2282 45.7589ZM18.7459 6.84993C16.9843 7.08678 16.0514 7.52001 15.3869 8.18446C14.7224 8.84892 14.2892 9.78183 14.0524 11.5435C13.8085 13.357 13.8047 15.7605 13.8047 19.2067V38.4133C13.8047 41.8595 13.8085 44.263 14.0524 46.0765C14.2892 47.8383 14.7224 48.771 15.3869 49.4356C16.0514 50.1001 16.9843 50.5332 18.7459 50.7702C20.5594 51.0139 22.9629 51.0177 26.4091 51.0177H31.2108C34.6569 51.0177 37.0604 51.0139 38.874 50.7702C40.6357 50.5332 41.5684 50.1001 42.233 49.4356C42.8975 48.771 43.3307 47.8383 43.5676 46.0765C43.8113 44.263 43.8151 41.8595 43.8151 38.4133V19.2067C43.8151 15.7605 43.8113 13.357 43.5676 11.5435C43.3307 9.78183 42.8975 8.84892 42.233 8.18446C41.5684 7.52001 40.6357 7.08678 38.874 6.84993C37.0604 6.60611 34.6569 6.60229 31.2108 6.60229H26.4091C22.9629 6.60229 20.5594 6.60611 18.7459 6.84993ZM19.8068 21.6075C19.8068 20.613 20.613 19.8069 21.6074 19.8069H36.0124C37.0069 19.8069 37.8131 20.613 37.8131 21.6075C37.8131 22.602 37.0069 23.4081 36.0124 23.4081H21.6074C20.613 23.4081 19.8068 22.602 19.8068 21.6075ZM19.8068 31.2108C19.8068 30.2164 20.613 29.4102 21.6074 29.4102H36.0124C37.0069 29.4102 37.8131 30.2164 37.8131 31.2108C37.8131 32.2053 37.0069 33.0115 36.0124 33.0115H21.6074C20.613 33.0115 19.8068 32.2053 19.8068 31.2108ZM19.8068 40.8142C19.8068 39.8197 20.613 39.0135 21.6074 39.0135H28.8099C29.8044 39.0135 30.6106 39.8197 30.6106 40.8142C30.6106 41.8086 29.8044 42.6148 28.8099 42.6148H21.6074C20.613 42.6148 19.8068 41.8086 19.8068 40.8142Z"
+                      fill="#CDD6F4"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="mailto:gabpercal325@gmail.com"
+                  class="card panels rounded-4 d-flex align-items-center justify-content-center text-decoration-none p"
+                  style="aspect-ratio: 1 / 1"
+                  id="email"
+                >
+                  <svg
+                    width="95"
+                    height="95"
+                    viewBox="0 0 95 95"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="94.5274"
+                      height="94.5274"
+                      rx="20"
+                      fill="#313244"
+                    />
+                    <path
+                      d="M28.6034 67.0167C27.283 67.0167 26.1526 66.5465 25.2122 65.6062C24.2719 64.6659 23.8018 63.5355 23.8018 62.215V33.405C23.8018 32.0845 24.2719 30.9541 25.2122 30.0138C26.1526 29.0735 27.283 28.6033 28.6034 28.6033H67.0168C68.3372 28.6033 69.4676 29.0735 70.4079 30.0138C71.3483 30.9541 71.8184 32.0845 71.8184 33.405V62.215C71.8184 63.5355 71.3483 64.6659 70.4079 65.6062C69.4676 66.5465 68.3372 67.0167 67.0168 67.0167H28.6034ZM47.8101 50.2108L28.6034 38.2067V62.215H67.0168V38.2067L47.8101 50.2108ZM47.8101 45.4092L67.0168 33.405H28.6034L47.8101 45.4092ZM28.6034 38.2067V33.405V62.215V38.2067Z"
+                      fill="#CDD6F4"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Skills and Tools -->
+          <div class="row g-3 d-flex align-items-stretch">
+            <!-- Skills -->
+            <div class="col-md-6">
+              <div
+                class="card p-4 panels h-100 rounded-4 d-flex align-items-center"
+                style="min-height: 180px"
+              >
+                <div class="text-center mb-auto">
+                  <h4>Skills</h4>
+                </div>
+
+                <div class="w-100 my-auto scrolling-tools">
+                  <div class="scrolling-tools-container">
+                    <div class="scrolling-tools-track">
+                      <!-- start -->
+                      <!-- html -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                      />
+
+                      <!-- css -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                      />
+
+                      <!-- js -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+                      />
+
+                      <!-- react native -->
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg"
+                      />
+                      <!-- c++ -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                      />
+
+                      <!-- c# -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                      />
+
+                      <!-- php -->
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                      />
+                      <!-- end -->
+                      <!-- start -->
+                      <!-- html -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                      />
+
+                      <!-- css -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                      />
+
+                      <!-- js -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+                      />
+
+                      <!-- react native -->
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg"
+                      />
+                      <!-- c++ -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                      />
+
+                      <!-- c# -->
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                      />
+
+                      <!-- php -->
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                      />
+                      <!-- end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tools -->
+            <div class="col-md-6">
+              <div
+                class="card p-4 panels h-100 rounded-4 d-flex align-items-center"
+                style="min-height: 180px"
+              >
+                <div class="text-center mb-auto">
+                  <h4>Tools</h4>
+                </div>
+
+                <div class="w-100 my-auto scrolling-tools">
+                  <div class="scrolling-tools-container">
+                    <div class="scrolling-tools-track">
+                      <!-- start -->
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                        alt="figma"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                        alt="git"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                        alt="github"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                        alt="linux"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/artixlinux/artixlinux-original.svg"
+                        alt="artixlinux"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscodium/vscodium-original.svg"
+                        alt="vscodium"
+                      />
+
+                      <!-- end -->
+                      <!-- start -->
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                        alt="figma"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                        alt="git"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                        alt="github"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                        alt="linux"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/artixlinux/artixlinux-original.svg"
+                        alt="artixlinux"
+                      />
+
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscodium/vscodium-original.svg"
+                        alt="vscodium"
+                      />
+
+                      <!-- end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
