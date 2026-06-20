@@ -1,52 +1,63 @@
-@font-face {
-    font-family: 'FOT-Rodin'; 
-    src: url('assets/FOT-Rodin Pro DB.otf') format('opentype'); 
+html {
+  scroll-behavior: smooth;
 }
 @font-face {
-    font-family: 'FOT-Skip'; 
-    src: url('assets/FOT-Skip Std B.otf') format('opentype'); 
+  font-family: "FOT-Rodin";
+  src: url("assets/FOT-Rodin Pro DB.otf") format("opentype");
+}
+@font-face {
+  font-family: "FOT-Skip";
+  src: url("assets/FOT-Skip Std B.otf") format("opentype");
 }
 
 :root {
-    --font-main: 'FOT-Skip', sans-serif;
-    --font-heading: 'FOT-Rodin', sans;
-    --font-color: #CDD6F4;
+  --font-main: "FOT-Skip", sans-serif;
+  --font-heading: "FOT-Rodin", sans;
+  --font-color: #cdd6f4;
+}
+body {
+  background-color: #11111b !important;
 }
 /*.img-fluid {
   max-width: 100% !important;
   height: auto !important;
 }*/
 .title-header {
-    font-family: var(--font-heading);
-    font-size: 4rem !important;
-    color: var(--font-color);
+  font-family: var(--font-heading);
+  font-size: 4rem !important;
+  color: var(--font-color);
 }
-.title-subheader,h4 {
-    font-family: var(--font-main);
-    font-size: 2rem !important;
-    color: var(--font-color) !important;
+.title-subheader,
+h4 {
+  font-family: var(--font-main);
+  font-size: 2rem !important;
+  color: var(--font-color) !important;
 }
-p {
-    font-family: var(--font-main);
-    font-size: 1.5rem !important;
-    color: var(--font-color);
+.about-p {
+  font-family: var(--font-main);
+  font-size: 1.5rem !important;
+  color: var(--font-color);
 }
 body,
 .bg {
-    background-color: #11111b;
+  background-color: #11111b;
 }
 .panels {
-    background-color: #313244 !important;
+  background-color: #313244 !important;
 }
-/* Hide overflow and setup window */
 .scrolling-tools-container {
   overflow: hidden;
   width: 100%;
   display: flex;
-  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent); /* Cool fade edge effect */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
 }
 
-/* Flex track that moves infinitely */
 .scrolling-tools-track {
   display: flex;
   gap: 2rem;
@@ -54,26 +65,94 @@ body,
   animation: scroll-left 15s linear infinite;
 }
 
-/* Image/SVG sizing inside marquee */
-.scrolling-tools-track img, 
+.scrolling-tools-track img,
 .scrolling-tools-track svg {
   width: 45px;
   height: 45px;
   object-fit: contain;
 }
 
-/* Pause animation on hover for user experience */
 .scrolling-tools-container:hover .scrolling-tools-track {
   animation-play-state: paused;
 }
 
-/* The infinite translation loop formula */
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
   100% {
-    /* Moves exactly halfway (width of one full set of items) */
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
+}
+.proj-card {
+  background: #1e1e2a;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+.proj-card-img,
+.proj-card-img > img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: #c8cad0;
+  object-fit: cover;
+}
+.proj-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.proj-card-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f0f0f5;
+  margin: 0 0 4px;
+}
+.proj-card-desc {
+  font-size: 1rem;
+  color: #8b8fa8;
+  font-family: monospace;
+  margin: 0 0 16px;
+  flex: 1;
+}
+.proj-card-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.proj-btn {
+  background: #7f8ab5;
+  color: #1e1e2a;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+.proj-btn:hover {
+  background: #9099c5;
+  color: #1e1e2a;
+  text-decoration: none;
+}
+#projectCarousel .btn-outline-secondary {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #8b8fa8;
+  border-radius: 8px;
+}
+#projectCarousel .btn-outline-secondary:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #f0f0f5;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+#side-nav {
+  transform: translateX(-80%);
+  transition: transform 0.2s ease;
+}
+#side-nav:hover {
+  transform: translateX(0);
 }
